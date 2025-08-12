@@ -1,4 +1,4 @@
-                                                                ENTREGA 1
+<h1 align="center">ENTREGA 1</h1>
 
                       
 
@@ -27,4 +27,12 @@ Modelo de Negocios:
 Las fuentes de ingresos son las Primas e inversiones hechas con los fondos obtenidos.
 Los costos son variables dado que el monto de indemnizaciones y siniestros son impredecibles.
 ```
+
+Diagrama E_R
+
+```ella
+"Se presenta en formato .JPG"
+``` 
+
+Listado de tablas
 
