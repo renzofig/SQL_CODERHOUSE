@@ -11,7 +11,7 @@ Introducción:
 Objetivos:
 
  ```ella
-"El objetivo principal es mantener actualizada la base da datos, ofrecer información relevante y oportuna para la adecuada toma de decisiones, evaluando las desviaciones y riesgos que puedan surgir de la operatoria diara pudiendo accedar a dicha información de manera agil."
+"El objetivo principal es mantener actualizada la base da datos, ofrecer información relevante y oportuna para la adecuada toma de decisiones, evaluando las desviaciones y riesgos que puedan surgir de la operatoria diaria pudiendo accedar a dicha información de manera agil."
 ```
 
 Situación Problemática:
@@ -35,4 +35,35 @@ Diagrama E_R
 ``` 
 
 Listado de tablas
+
+```ella
+La base de datos EMPRESA RF esta compuesta por:
+
+Tabla "Clientes":
+Clave Primaria: Id (Identificador único de cada cliente)
+Claves Foraneas: localidad_id, cobertura_id, tipo_vehiculo_id, marca_vehiculo_id, modelo_vehiculo_id, patente_id
+
+Tabla "localidad":
+Clave Primaria: Id (Identificador único de cada localidad)
+Sin claves Foraneas
+
+Tabla "Cobertura"
+Clave Primaria: Id (Identificador único de cada cobertura)
+Sin claves Foraneas
+
+Tabla "Tipo_Vehiculo"
+Clave Primaria: Id (Identificador único de cada Tipo de Vehiculo)
+Sin calves Foraneas
+
+Tabla "Marca_Vehiculo"
+Clave Primaria: Id (Identificador único de cada Marca de Vehiculo)
+Sin calves Foraneas
+
+Tabla "Modelo_vehiculo"
+Clave Primaria: Id (Identificador único de cada Modelo de Vehiculo)
+Sin calves Foraneas
+
+Tabla "Patente"
+Clave Primaria: Id (Identificador único de cada Patente)
+Sin calves Foraneas
 
