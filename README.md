@@ -66,4 +66,4 @@ Sin calves Foraneas
 Tabla "Patente"
 Clave Primaria: Id (Identificador único de cada Patente)
 Sin calves Foraneas
-
+```
