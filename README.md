@@ -41,7 +41,7 @@ La base de datos EMPRESA RF esta compuesta por:
 
 Tabla "Clientes":
 Clave Primaria: Id (Identificador único de cada cliente)
-Claves Foraneas: localidad_id, cobertura_id, tipo_vehiculo_id, marca_vehiculo_id, modelo_vehiculo_id, patente_id
+Claves Foraneas: localidad_id, cobertura_id, patente_id
 
 Tabla "localidad":
 Clave Primaria: Id (Identificador único de cada localidad)
@@ -65,5 +65,5 @@ Sin calves Foraneas
 
 Tabla "Patente"
 Clave Primaria: Id (Identificador único de cada Patente)
-Sin calves Foraneas
+Claves Foraneas: tipo_vehiculo_id, marca_vehiculo_id, modelo_vehiculo_id
 ```
