@@ -51,19 +51,7 @@ Tabla "Cobertura"
 Clave Primaria: Id (Identificador único de cada cobertura)
 Sin claves Foraneas
 
-Tabla "Tipo_Vehiculo"
-Clave Primaria: Id (Identificador único de cada Tipo de Vehiculo)
-Sin calves Foraneas
-
-Tabla "Marca_Vehiculo"
-Clave Primaria: Id (Identificador único de cada Marca de Vehiculo)
-Sin calves Foraneas
-
-Tabla "Modelo_vehiculo"
-Clave Primaria: Id (Identificador único de cada Modelo de Vehiculo)
-Sin calves Foraneas
-
 Tabla "Patente"
 Clave Primaria: Id (Identificador único de cada Patente)
-Claves Foraneas: tipo_vehiculo_id, marca_vehiculo_id, modelo_vehiculo_id
+Sin claves Foraneas
 ```
