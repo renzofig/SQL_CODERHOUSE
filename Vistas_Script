@@ -1,10 +1,4 @@
-1. Vista: vw_clientes_detalle
-
-Descripción: Esta vista combina los datos de las tablas clientes, localidad, cobertura y patente para tener una visión completa y detallada de cada cliente en una sola consulta.
-
-Objetivo: Simplificar las consultas. En lugar de tener que unir múltiples tablas cada vez que se necesita información detallada de los clientes, se puede consultar directamente esta vista. Esto mejora la legibilidad del código SQL y reduce la probabilidad de errores.
-
-Tablas que la componen: clientes, localidad, cobertura, patente.
+--- vw_clientes_detalle
 
 CREATE OR REPLACE VIEW vw_clientes_detalle AS
 SELECT
