@@ -1,0 +1,41 @@
+1. Vista: vw_clientes_detalle
+
+Descripción: Esta vista combina los datos de las tablas clientes, localidad, cobertura y patente para tener una visión completa y detallada de cada cliente en una sola consulta.
+
+Objetivo: Simplificar las consultas. En lugar de tener que unir múltiples tablas cada vez que se necesita información detallada de los clientes, se puede consultar directamente esta vista. Esto mejora la legibilidad del código SQL y reduce la probabilidad de errores.
+
+Tablas que la componen: clientes, localidad, cobertura, patente.
+
+CREATE OR REPLACE VIEW vw_clientes_detalle AS
+SELECT
+    c.Id AS cliente_id,
+    c.Nombre,
+    c.Apellido,
+    c.Email,
+    l.Ciudad AS Ciudad,
+    l.Provincia AS Provincia,
+    l.CP AS CodigoPostal,
+    co.Tipo AS TipoCobertura,
+    p.Marca AS MarcaVehiculo,
+    p.Modelo AS ModeloVehiculo,
+    p.Tipo AS TipoVehiculo
+FROM clientes c
+JOIN localidad l ON c.localidad_id = l.Id
+JOIN cobertura co ON c.cobertura_id = co.Id
+JOIN patente p ON c.patente_id = p.Id;
+
+2. Vista: vw_resumen_cobertura
+
+Descripción: Esta vista muestra un resumen de la cantidad de clientes por tipo de cobertura.
+
+Objetivo: Obtener métricas clave para el análisis, como la distribución de los clientes por tipo de servicio contratado.
+
+Tablas que la componen: clientes, cobertura.
+
+CREATE OR REPLACE VIEW vw_resumen_cobertura AS
+SELECT
+    co.Tipo AS TipoCobertura,
+    COUNT(c.Id) AS TotalClientes
+FROM clientes c
+JOIN cobertura co ON c.cobertura_id = co.Id
+GROUP BY co.Tipo;
