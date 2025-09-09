@@ -1,4 +1,4 @@
---- vw_clientes_detalle
+-- vw_clientes_detalle
 
 CREATE OR REPLACE VIEW vw_clientes_detalle AS
 SELECT
@@ -18,13 +18,7 @@ JOIN localidad l ON c.localidad_id = l.Id
 JOIN cobertura co ON c.cobertura_id = co.Id
 JOIN patente p ON c.patente_id = p.Id;
 
-2. Vista: vw_resumen_cobertura
-
-Descripción: Esta vista muestra un resumen de la cantidad de clientes por tipo de cobertura.
-
-Objetivo: Obtener métricas clave para el análisis, como la distribución de los clientes por tipo de servicio contratado.
-
-Tablas que la componen: clientes, cobertura.
+-- Vista: vw_resumen_cobertura
 
 CREATE OR REPLACE VIEW vw_resumen_cobertura AS
 SELECT
