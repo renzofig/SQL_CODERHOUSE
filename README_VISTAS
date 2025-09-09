@@ -1,4 +1,4 @@
-<h1 align="center">ENTREGA 1</h1>
+<h1 align="center">ENTREGA 2</h1>
 
                       
 
@@ -15,47 +15,11 @@ Tablas que la componen: clientes, localidad, cobertura, patente."
 
 
 
- ```"
-```
+ ```2. Vista: vw_resumen_cobertura
 
-Situación Problemática:
+Descripción: Esta vista muestra un resumen de la cantidad de clientes por tipo de cobertura.
 
-```ella
-"Se utilizan actualmente como base de datos, distintos archivos de excel que dificultan el acceso a la información y surgen ciertos errores al no tener un cruce correcto. Este sistema de gestión enfrentará esta problematica uniendo la información."
- ```
+Objetivo: Obtener métricas clave para el análisis, como la distribución de los clientes por tipo de servicio contratado.
 
-Modelo de Negocios:
-
-```ella
-"Nuestra aseguradora se dedica a ofrecer productos financieros que cubren riesgos a cambio del pago de una prima por parte del cliente, brindamos protección económica ante eventos imprevistos como accidentes.
-Las fuentes de ingresos son las Primas e inversiones hechas con los fondos obtenidos.
-Los costos son variables dado que el monto de indemnizaciones y siniestros son impredecibles.
-```
-
-Diagrama E_R
-
-```ella
-"Se presenta en formato .JPG"
-``` 
-
-Listado de tablas
-
-```ella
-La base de datos EMPRESA RF esta compuesta por:
-
-Tabla "Clientes":
-Clave Primaria: Id (Identificador único de cada cliente)
-Claves Foraneas: localidad_id, cobertura_id, patente_id
-
-Tabla "localidad":
-Clave Primaria: Id (Identificador único de cada localidad)
-Sin claves Foraneas
-
-Tabla "Cobertura"
-Clave Primaria: Id (Identificador único de cada cobertura)
-Sin claves Foraneas
-
-Tabla "Patente"
-Clave Primaria: Id (Identificador único de cada Patente)
-Sin claves Foraneas
+Tablas que la componen: clientes, cobertura.
 ```
