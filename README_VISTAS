@@ -2,16 +2,20 @@
 
                       
 
-Introducción:
+Vistas
   
-  ```ella
-"La presente entrega es un avance del proyecto final, el cual, girara en torno a una empresa de seguros donde la información debe ser manejada cuidadosamente para la futura toma de decisiones estrategicas en torno al mercado."
+  ```1. Vista vw_clientes_detalle
+
+Descripción: Esta vista combina los datos de las tablas clientes, localidad, cobertura y patente para tener una visión completa y detallada de cada cliente en una sola consulta.
+
+Objetivo: Simplificar las consultas. En lugar de tener que unir múltiples tablas cada vez que se necesita información detallada de los clientes, se puede consultar directamente esta vista. Esto mejora la legibilidad del código SQL y reduce la probabilidad de errores.
+
+Tablas que la componen: clientes, localidad, cobertura, patente."
 ```
 
-Objetivos:
 
- ```ella
-"El objetivo principal es mantener actualizada la base da datos, ofrecer información relevante y oportuna para la adecuada toma de decisiones, evaluando las desviaciones y riesgos que puedan surgir de la operatoria diaria pudiendo accedar a dicha información de manera agil."
+
+ ```"
 ```
 
 Situación Problemática:
