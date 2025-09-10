@@ -1,4 +1,4 @@
---Creación DB
+-- Creación DB
 
 CREATE DATABASE IF NOT EXISTS empresa_rf; 
 
