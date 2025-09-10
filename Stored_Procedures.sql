@@ -41,4 +41,14 @@ BEGIN
     INSERT INTO clientes (Nombre, Apellido, Email, localidad_id, cobertura_id, patente_id)
     VALUES (p_nombre, p_apellido, p_email, localidad_id, cobertura_id, patente_id);
 END //
+
+    CREATE PROCEDURE sp_actualizar_email_cliente(
+    IN p_cliente_id INT,
+    IN p_nuevo_email VARCHAR(255)
+)
+BEGIN
+    UPDATE clientes
+    SET Email = p_nuevo_email
+    WHERE Id = p_cliente_id;
+END //
 DELIMITER ;
