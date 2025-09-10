@@ -2,7 +2,7 @@
 
 CREATE DATABASE IF NOT EXISTS empresa_rf; 
 
---Uso DB
+-- Uso DB
 
 USE empresa_rf;
 
