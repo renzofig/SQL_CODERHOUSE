@@ -13,3 +13,14 @@ Objetivo: Aporta un beneficio de integridad y seguridad de los datos. Centraliza
 
 Tablas con las que interactúa: clientes, localidad, cobertura, patente
 ```
+
+```
+Stored Procedure: sp_actualizar_email_cliente
+
+Descripción: Este procedimiento almacenado actualiza la dirección de correo electrónico de un cliente existente.
+
+Objetivo: Proporcionar una forma sencilla y segura de modificar el email de un cliente sin afectar otros datos.
+
+Tablas con las que interactúa: Clientes
+```
+
