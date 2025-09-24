@@ -41,3 +41,17 @@ CREATE TABLE IF NOT EXISTS clientes (
     FOREIGN KEY (localidad_id) REFERENCES localidad(Id), 
     FOREIGN KEY (cobertura_id) REFERENCES cobertura(Id),
     FOREIGN KEY (patente_id) REFERENCES patente(Id) );
+
+-- Creación de la tabla 'Clientes_audit'
+
+CREATE TABLE IF NOT EXISTS clientes_audit (
+    audit_id INT AUTO_INCREMENT PRIMARY KEY,
+    cliente_id INT,
+    old_nombre VARCHAR(255),
+    new_nombre VARCHAR(255),
+    old_apellido VARCHAR(255),
+    new_apellido VARCHAR(255),
+    old_email VARCHAR(255),
+    new_email VARCHAR(255),
+    cambio_fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
