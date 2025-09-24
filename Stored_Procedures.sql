@@ -52,3 +52,23 @@ BEGIN
     WHERE Id = p_cliente_id;
 END //
 DELIMITER ;
+
+-- Prueba de los SP
+
+CALL sp_agregar_cliente(
+    'Juan', 
+    'Pérez', 
+    'juan.perez@example.com', 
+    'Buenos Aires', 
+    'Buenos Aires', 
+    '1001', 
+    'Responsabilidad Civil', 
+    'Ford', 
+    'Focus', 
+    'Sedan'
+);
+
+CALL sp_actualizar_email_cliente(
+    1, 
+    'nuevo.email@example.com'
+);
