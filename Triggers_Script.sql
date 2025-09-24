@@ -53,11 +53,10 @@ DELIMITER ;
 
 -- Se actualiza el correo electrónico del cliente con ID 1
 
-CALL sp_actualizar_email_cliente(1, 'juan.perez_nuevo@example.com');
+CALL sp_actualizar_email_cliente(2, 'ana_garcia@gmail.com');
 
 -- Reviso la tabla de auditoría para ver el registro del cambio
 
-SELECT * FROM clientes_audit WHERE cliente_id = 1;
-
+SELECT * FROM clientes_audit WHERE cliente_id = 2;
 
 
