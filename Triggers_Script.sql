@@ -29,7 +29,24 @@ BEGIN
     END IF;
 END //
 
-  
+CREATE TRIGGER tr_before_delete_todo_riesgo
+BEFORE DELETE ON clientes
+FOR EACH ROW
+BEGIN
+    DECLARE cobertura_tipo VARCHAR(255);
+
+    -- Obtener el tipo de cobertura del cliente que se va a eliminar
+    SELECT Tipo INTO cobertura_tipo
+    FROM cobertura
+    WHERE Id = OLD.cobertura_id;
+    
+    -- Prevenir la eliminación si el tipo de cobertura es 'Todo Riesgo'
+    IF cobertura_tipo = 'Todo Riesgo' THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'No se puede eliminar un cliente con cobertura de tipo "Todo Riesgo".';
+    END IF;
+END //
+    
 DELIMITER ;
 
 -- Uso trigger "Clientes_audit"
