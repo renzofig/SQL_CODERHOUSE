@@ -58,17 +58,17 @@ DELIMITER ;
 CALL sp_agregar_cliente(
     'Juan', 
     'Pérez', 
-    'juan.perez@example.com', 
+    'juan.perez@gmail.com', 
     'Buenos Aires', 
     'Buenos Aires', 
     '1001', 
     'Responsabilidad Civil', 
-    'Ford', 
     'Focus', 
+    'Ford', 
     'Sedan'
 );
 
 CALL sp_actualizar_email_cliente(
     1, 
-    'nuevo.email@example.com'
+    'juan.perez1@gmail.com'
 );
