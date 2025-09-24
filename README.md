@@ -54,4 +54,10 @@ Sin claves Foraneas
 Tabla "Patente"
 Clave Primaria: Id (Identificador único de cada Patente)
 Sin claves Foraneas
+
+-- Se agrega tabla para almacenar los registros de los cambios
+
+Tabla "Clientes_audit" 
+Clave Primaria: Id (Identificador único de cada auditoria)
+Sin claves Foraneas
 ```
